@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>605</title>
+        <style>
+            body{
+                background-color: whitesmoke;
+                transition: 1s;
+            }
+            body:hover{
+                background-color: aquamarine;
+                transition: 1s;
+            }
+            .title_div{
+                margin: 0 auto;
+                text-align: center;
+                border-radius: 40px;
+                width: 500px;
+                opacity: .3;
+                transition: 1s;
+                background-color: deepskyblue;
+                overflow: hidden;
+                padding: 10px;
+                height: 45px;
+            }
+            .title_div:hover{
+                border-radius: 50px;
+                width: 1000px;
+                opacity: .8;
+                transition: 1s;
+                height: 100px;
+                animation-play-state: paused;
+            }
+            .title{
+                font-family: Times;
+                color: greenyellow;
+                font-size: 30pt;
+                line-height: 0;
+            }
+            .fst_text{
+                color: aliceblue;
+                font-family: Times, 宋体;
+                font-size: 15pt;
+            }
+            
+            .main{
+                background-color: lightcyan;
+                overflow: hidden;
+                opacity: 1;
+                width: 1000px;
+                margin: auto;
+                border-radius: 50px;
+                padding: 20px;
+                display: flex;
+                transition: 2s;
+            }
+            .main:hover{
+                transition: 2s;
+                background-color: darkcyan;
+            }
+            .card{
+                background-color: lightskyblue;
+                overflow: hidden;
+                opacity: .75;
+                width: 400px;
+                height: 500px;
+                border-radius: 30px;
+                padding: 20px;
+                margin: 10px;
+                box-sizing: border-box;
+                transition: 1s;
+            }
+            .card:hover{
+                width: 600px;
+                opacity: 1;
+                border: 5px solid deepblue;
+                transition: 1s;
+                background-color: skyblue;
+                border-radius: 10px;
+            }
+            .container{
+                animation: switch 20s infinite;
+                display: flex;
+                justify-content: space-between;
+            }
+            .container:hover{
+                animation-play-state: paused;
+            }
+            .namep{
+                color: black;
+                font-size: 20px;
+                font-family: 宋体;
+                opacity: 1;
+                line-height: 2;
+                text-align: center;
+            }
+            .infop{
+                color: black;
+                font-family: 宋体;
+            }
+            @keyframes switch{
+                0%{
+                    margin-left: 0;
+                }
+                50%{
+                    margin-left: -1000px;
+                }
+                100%{
+                    margin-left: 0;
+                }
+            }
+            .table_div{
+                font-family: 黑体;
+                font-size: 12pt;
+                margin: auto 0;
+                background-color: powderblue;
+                border: 2px solid lightskyblue;
+                border-radius: 15px;
+                height: 200px;
+                width: 20px;
+                transition: 1s;
+                display: flex;
+                overflow: hidden;
+            }
+            .table_div:hover{
+                width: 40px;
+                transition: 1s;
+            }
+            .table{
+                margin: auto 2px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="title_div">
+            <h1 class="title">5</h1>
+            <p class="fst_text">Hey, <i>friend</i>!<br>这是一个<strong>非常容易</strong>被发现的彩蛋……</p>
+        </div>
+        <hr />
+        <div class="main">
+            <div class="container">
+                <div class="table_div">
+                    <p class="table"><storng>自<br>己</storng></p>
+                    <p class="table">这是我自己</p>
+                </div>
+                <div class="card">
+                    <p class="namep"><strong>自己</strong></p>
+                    <p class="infop"><strong>姓名</strong>：陈彦佑<br><strong>学号</strong>：21<br><strong>爱好</strong>：唱歌、编程<br><strong>座右铭</strong>：只要happy就够了！<br><strong>梦想</strong>：考上浙大</p>
+                </div>
+                <div class="table_div">
+                    <p class="table"><strong>好<br>朋<br>友</strong></p>
+                    <p class="table">我的好朋友</p>
+                </div>
+                <div class="card">
+                    <p class="namep"><strong>朋友</strong></p>
+                    <p class="infop"><strong>姓名</strong>：韩烨晨<br><strong>学号</strong>：25<br><strong>爱好</strong>：?<br><strong>座右铭</strong>：卷卷更健康。<br><strong>梦想</strong>：去美国拿绿卡</p>
+                </div>
+                <div class="table_div">
+                    <p class="table"><strong>周<br>边</strong></p>
+                    <p class="table">坐在我旁边的</p>
+                </div>
+                <div class="card">
+                    <p class="namep"><strong>同桌</strong></p>
+                    <p class="infop"><strong>姓名</strong>：叶易祺<br><strong>学号</strong>：16<br><strong>爱好</strong>：?<br><strong>座右铭</strong>：不负韶华，只争朝夕。<br><strong>梦想</strong>：考上浙大</p>
+                </div>
+                <p>♥</p>
+                <div class="card">
+                    <p class="namep"><strong>右桌</strong></p>
+                    <p class="infop"><strong>姓名</strong>：方笑宸<br><strong>学号</strong>：23<br><strong>爱好</strong>：?<br><strong>座右铭</strong>：?<br><strong>梦想</strong>：？</p>
+                </div>
+                <div class="table_div">
+                    <p class="table"><strong>同<br>学</strong></p>
+                    <p class="table">除了前面以外的同学</p>
+                </div>
+                <div class="card">
+                    <p class="namep"><strong>1号</strong></p>
+                    <p class="infop"><strong>姓名</strong>：龚子茹<br><strong>学号</strong>：1<br><strong>爱好</strong>：?<br><strong>座右铭</strong>：？<br><strong>梦想</strong>：？</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
